@@ -1,7 +1,10 @@
+use utils::structs::stopwatch::{ReportDuration, Stopwatch};
+
 fn main() -> Result <(), std::io::Error> {
+    let mut watch = Stopwatch::new();
     let input = std::fs::read_to_string("input")?;
-    println!("{}", part1(&parse_input(input.clone())));
-    println!("{}", part2(&parse_input(input.clone())));
+    println!("1. {} ({})", part1(&parse_input(input.clone())), watch.lap().report());
+    println!("2. {} ({})", part2(&parse_input(input.clone())), watch.lap().report());
     Ok(())
 }
 
