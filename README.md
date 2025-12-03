@@ -10,9 +10,9 @@ enjoy the slop
 - [x] Day 2
   - [x] :star:
   - [x] :star:
-- [ ] Day 3
-  - [ ] :star:
-  - [ ] :star:
+- [x] Day 3
+  - [x] :star:
+  - [x] :star:
 - [ ] Day 4
   - [ ] :star:
   - [ ] :star:
