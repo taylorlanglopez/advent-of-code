@@ -55,7 +55,6 @@ fn part2(input: &Vec<String>, num_batteries: usize) -> u64 {
                         break;
                     }
                 }
-                println!("Window: {:?}, Turned on: {:?}", window, &turned_on);
             }
             turned_on.iter().fold(0u64, |acc, &d| acc * 10 + d as u64)
         }).sum()

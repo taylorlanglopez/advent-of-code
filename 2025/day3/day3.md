@@ -1,5 +1,6 @@
-> cargo run --release --bin day3-2025 > day3.md
-1. 17158 (701μs)
-2. 170449335646486 (641μs)
+> cargo run --release --bin day3-2025 > 2025/day3/day3.md
 
-9:03 PST to 10:09 PST
+1. 17158 (533μs)
+2. 170449335646486 (539μs)
+
+2130 PST -> 2230 PST
