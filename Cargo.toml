@@ -5,6 +5,7 @@ edition = "2024"
 
 [dependencies]
 utils = { path = "utils" }
+regex = "1"
 
 [[bin]]
 name = "day1-2025"
@@ -17,3 +18,11 @@ path = "2025/day2/src/main.rs"
 [[bin]]
 name = "day3-2025"
 path = "2025/day3/src/main.rs"
+
+[[bin]]
+name = "day4-2025"
+path = "2025/day4/src/main.rs"
+
+[[bin]]
+name = "day5-2025"
+path = "2025/day5/src/main.rs"
