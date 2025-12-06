@@ -118,6 +118,29 @@
                     "--bin=day5-2025"
                 ]
             }
+        },
+        {
+            "name": "Debug executable 'day6-2025'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "run",
+                    "--bin=day6-2025"
+                ]
+            },
+            "args": []
+        },
+        {
+            "name": "Debug unit tests in executable 'day6-2025'",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--bin=day6-2025"
+                ]
+            }
         }
     ]
 }
