@@ -12,12 +12,12 @@ fn main() {
     let input = std::fs::read_to_string("2025/day6/input").expect("Failed to read input file");
     println!(
         "1. {} ({})",
-        part1(&parse_input(&input, ReadDirection::LeftToRight)),
+        solve_problems_set(&parse_input(&input, ReadDirection::LeftToRight)),
         watch.lap().report()
     );
     println!(
         "2. {} ({})",
-        part2(&parse_input(&input, ReadDirection::RightToLeft)),
+        solve_problems_set(&parse_input(&input, ReadDirection::RightToLeft)),
         watch.lap().report()
     );
 }
@@ -119,7 +119,7 @@ fn parse_input(input: &str, direction: ReadDirection) -> Vec<(Vec<u64>, char)> {
     problems
 }
 
-fn part1(problems: &Vec<(Vec<u64>, char)>) -> u64 {
+fn solve_problems_set(problems: &Vec<(Vec<u64>, char)>) -> u64 {
     let mut result: u64 = 0;
 
     for (numbers, operator) in problems {
@@ -136,25 +136,6 @@ fn part1(problems: &Vec<(Vec<u64>, char)>) -> u64 {
         }
     }
 
-    result
-}
-
-fn part2(problems: &Vec<(Vec<u64>, char)>) -> u64 {
-    let mut result: u64 = 0;
-
-    for (numbers, operator) in problems {
-        match operator {
-            '*' => {
-                let product: u64 = numbers.iter().product();
-                result += product;
-            },
-            '+' => {
-                let sum: u64 = numbers.iter().sum();
-                result += sum;
-            }
-            _ => panic!("Unknown operator"),
-        }
-    }
     result
 }
 
@@ -166,7 +147,7 @@ fn test1() {
   6 98  215 314
 *   +   *   +
 ";
-    assert_eq!(part1(&parse_input(raw_input, ReadDirection::LeftToRight)), 4277556);
+    assert_eq!(solve_problems_set(&parse_input(raw_input, ReadDirection::LeftToRight)), 4277556);
 }
 
 #[test]
@@ -177,5 +158,5 @@ fn test2() {
   6 98  215 314
 *   +   *   +  
 ";
-    assert_eq!(part2(&parse_input(raw_input, ReadDirection::RightToLeft)), 3263827);
+    assert_eq!(solve_problems_set(&parse_input(raw_input, ReadDirection::RightToLeft)), 3263827);
 }
