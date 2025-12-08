@@ -2,7 +2,7 @@ Trying to do advent of code in rust
 
 enjoy the slop
 
-![Advent of code progress](2025/progress.png)
+![Advent of code progress](2025/day8_progress.png)
 
 ## Day Records
 
