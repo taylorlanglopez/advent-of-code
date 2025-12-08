@@ -2,8 +2,8 @@ use utils::structs::stopwatch::{ReportDuration, Stopwatch};
 
 fn main() {
     let mut watch = Stopwatch::new();
-    watch.start();
     let input = std::fs::read_to_string("2025/day7/input").expect("Failed to read input file");
+    watch.start();
     println!(
         "1. {} ({})",
         part1(parse_input(&input)),
