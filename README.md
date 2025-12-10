@@ -2,7 +2,7 @@ Trying to do advent of code in rust
 
 enjoy the slop
 
-![Advent of code progress](2025/day8_progress.png)
+![Advent of code progress](2025/day_9_10_progress.png)
 
 ## Day Records
 
@@ -18,7 +18,7 @@ enjoy the slop
 | 6   | 4364617236318    | 9077004354241    | 195μs/195μs         |
 | 7   | 1570             | 15118009521693   | 194μs/147μs         |
 | 8   | 175440           | 3200955921       | 212μs/139μs         |
-| 9   | -                | -                | -/-                 |
+| 9   | 4755278336       | 1534043700       | 236μs/138ms         |
 | 10  | -                | -                | -/-                 |
 | 11  | -                | -                | -/-                 |
 | 12  | -                | -                | -/-                 |
